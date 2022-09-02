@@ -1,0 +1,15 @@
+package OOP.Animal;
+
+public class main {
+    public static void main(String[] args) {
+        Veterinary veterinary = new Veterinary();
+        Animal[] animals = new Animal[3];
+        animals[0] = new Dog("Meat","Cage#1","Ballpoint");
+        animals[1] = new Cat("Fish","House","Vasya");
+        animals[2] = new Horse("Apple","Cage#2","Spirit");
+
+        for(Animal animal: animals) {
+            veterinary.treatAnimal(animal);
+        }
+    }
+}
